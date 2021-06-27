@@ -1,0 +1,94 @@
+@charset "UTF-8";
+/*
+    Date: 6/25/2021
+    File Name: style.css (My Cheat Sheet: https://www.w3schools.com/bootstrap4/bootstrap_get_started.asp/)
+*/
+
+/* .navbar-toggler{
+  background-image: url('../images/menu.png/');
+  background-repeat: no-repeat;
+}   */
+
+.hero{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url('../images/landscape2small.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: cover;
+    height: 24em;
+}
+.welcome{
+    margin-top: 3rem;
+    margin-right: 1rem;
+    text-align: right;
+}
+.bg-dark-color{
+    background-color: #484848;
+}
+.bg-dark-brown{
+    background-color:#341c02 ;
+}
+
+.back-to-top {
+    display: inline-block;
+    cursor: pointer;
+    position: fixed;
+    bottom: 1.2em;
+    right: 1.2em;
+    display: none;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+    text-align: center;
+}
+.gap {
+padding-right: .7em;
+border: 2em solid white;
+}
+.gap1 {
+  padding-right: .9em;
+  padding-left: .9em;
+  border: 2em solid white;
+}
+.gap2 {
+  padding-left: .7em;
+  border: 2em solid white;
+}
+
+/* Media Query for Tablet Viewport */
+@media (min-width: 768px) { 
+    .hero{
+         background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url('../images/landscape2.jpg');
+         background-size: 100%;
+         background-repeat: no-repeat;
+         background-position: cover;
+         height: 32rem;
+     }
+    .welcome {
+        margin-top: 3.7em;
+        margin-left: 9em;  
+    }
+
+
+}
+
+/* Media Query for Desktop Viewport */
+@media (min-width: 992px) { 
+    
+    .hero {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url('../images/landscape2.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 50rem;
+    }
+    
+    .display-1 {
+        font-size: 8em;
+    }
+    .welcome{
+        margin-top: 7rem;
+        text-align: center;
+    }
+
+}
